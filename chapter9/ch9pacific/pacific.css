@@ -165,10 +165,35 @@ tr:nth-last-of-type(odd) {
     display: none;
   }
   td.package::before {
+    content: "Package:";
+  }
+  td.description::before {
     content: "Description:";
   }
   td.nights::before {
     content: "Nights:";
+  }
+  td.cost::before {
+    content: "Cost:";
+  }
+  td.package,
+  td.description,
+  td.nights,
+  td.cost {
+    padding-left: 35%;
+    position: relative;
+    text-align: left;
+    font-size: 4vw;
+  }
+  td::before {
+    position: absolute;
+    top: 10px;
+    left: 0.5em;
+    font-weight: bold;
+    color: #1976d2;
+  }
+  td:last-of-type {
+    border-bottom: 2px solid #1b69b2;
   }
 }
 
